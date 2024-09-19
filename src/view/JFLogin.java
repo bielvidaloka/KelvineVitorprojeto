@@ -4,6 +4,7 @@
  */
 package view;
 
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 /**
@@ -44,22 +45,22 @@ public class JFLogin extends javax.swing.JFrame {
         setTitle("Autentricaçao");
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setText("Usuário");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 150, 40, 30));
+        jLabel1.setText("Usuario");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 110, 40, 30));
 
         jLabel2.setText("Senha");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 190, 50, 90));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 160, 50, 60));
 
-        jTextFieldUsuario.setText("biel ");
-        getContentPane().add(jTextFieldUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 180, 300, -1));
+        jTextFieldUsuario.setText("Kelvin");
+        getContentPane().add(jTextFieldUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 140, 300, -1));
 
-        jPasswordFieldSenha.setText("jPasswordField1");
+        jPasswordFieldSenha.setText("1234");
         jPasswordFieldSenha.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jPasswordFieldSenhaActionPerformed(evt);
             }
         });
-        getContentPane().add(jPasswordFieldSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 250, 300, -1));
+        getContentPane().add(jPasswordFieldSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 210, 300, -1));
 
         jButtonEntrar.setText("Entrar");
         jButtonEntrar.addActionListener(new java.awt.event.ActionListener() {
@@ -67,13 +68,12 @@ public class JFLogin extends javax.swing.JFrame {
                 jButtonEntrarActionPerformed(evt);
             }
         });
-        getContentPane().add(jButtonEntrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(722, 290, 240, -1));
+        getContentPane().add(jButtonEntrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 290, 240, -1));
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 30, -1, -1));
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 460, -1, -1));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/jato.png"))); // NOI18N
-        jLabel4.setText("jLabel4");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 60, 420, 290));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 420, 290));
 
         pack();
         setLocationRelativeTo(null);
@@ -86,11 +86,18 @@ public class JFLogin extends javax.swing.JFrame {
         
         if(usuario.equals("Kelvin") &&
                 senha.equals("1234")) {
-                JOptionPane.showMessageDialog
-                (null, "Correto");
+            //criar uma instancia da classe
+                Main main = new Main ();
+                main.setExtendedState(JFrame.MAXIMIZED_BOTH);
+                //exibe a nova tela 
+                main.setVisible(true);
+                //fecha o atual
+                dispose();
+                
        }else{
             JOptionPane.showMessageDialog
             (null, "Login ou senha invalidos!");
+            
         
     }
         

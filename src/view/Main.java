@@ -26,20 +26,153 @@ public class Main extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jButton1 = new javax.swing.JButton();
+        jMenu4 = new javax.swing.JMenu();
+        jToolBar1 = new javax.swing.JToolBar();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
+        jButton11 = new javax.swing.JButton();
+        jButton9 = new javax.swing.JButton();
+        jButton12 = new javax.swing.JButton();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
+        jMenuItem2 = new javax.swing.JMenuItem();
+        jMenu3 = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItem3 = new javax.swing.JMenuItem();
+        jMenuItem4 = new javax.swing.JMenuItem();
+        jMenuItem5 = new javax.swing.JMenuItem();
+        jMenuItem6 = new javax.swing.JMenuItem();
+        jMenuItem7 = new javax.swing.JMenuItem();
+        jMenuItem8 = new javax.swing.JMenuItem();
+        jMenuItem9 = new javax.swing.JMenuItem();
+        jMenu2 = new javax.swing.JMenu();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        jButton1.setText("jButton1");
+
+        jMenu4.setText("jMenu4");
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Gestao Escolar");
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jToolBar1.setRollover(true);
+
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8-homem-estudante-48 (1).png"))); // NOI18N
+        jButton2.setText("Alunos");
+        jButton2.setFocusable(false);
+        jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jToolBar1.add(jButton2);
+
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8-professor-48.png"))); // NOI18N
+        jButton3.setText("Professores");
+        jButton3.setFocusable(false);
+        jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton3.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jToolBar1.add(jButton3);
+
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8-escola-48.png"))); // NOI18N
+        jButton4.setText("Escola");
+        jButton4.setFocusable(false);
+        jButton4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton4.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jToolBar1.add(jButton4);
+
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8-diretor-48.png"))); // NOI18N
+        jButton5.setText("Diretor");
+        jButton5.setFocusable(false);
+        jButton5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton5.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jToolBar1.add(jButton5);
+
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8-funcionários-48.png"))); // NOI18N
+        jButton6.setText("Funcionarios");
+        jButton6.setFocusable(false);
+        jButton6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton6.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jToolBar1.add(jButton6);
+
+        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8-planejador-48.png"))); // NOI18N
+        jButton7.setText("Horario");
+        jButton7.setFocusable(false);
+        jButton7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton7.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jToolBar1.add(jButton7);
+
+        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8-boletim-48.png"))); // NOI18N
+        jButton8.setText("Notas");
+        jButton8.setFocusable(false);
+        jButton8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton8.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jToolBar1.add(jButton8);
+
+        jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8-events-48 (1).png"))); // NOI18N
+        jButton11.setText("Eventos");
+        jButton11.setFocusable(false);
+        jButton11.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton11.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jToolBar1.add(jButton11);
+
+        jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8-sair-48 (1).png"))); // NOI18N
+        jButton9.setText("Sair");
+        jButton9.setFocusable(false);
+        jButton9.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton9.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jToolBar1.add(jButton9);
+
+        getContentPane().add(jToolBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 70));
+
+        jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/GESTÃO ESCOLAR (1).png"))); // NOI18N
+        getContentPane().add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 73, 320, 270));
+
+        jMenu1.setText("Arquivo");
+
+        jMenuItem2.setText("Sair");
+        jMenu1.add(jMenuItem2);
+
+        jMenuBar1.add(jMenu1);
+
+        jMenu3.setText("Cadastro");
+
+        jMenuItem1.setText("Escola");
+        jMenu3.add(jMenuItem1);
+
+        jMenuItem3.setText("Aluno");
+        jMenu3.add(jMenuItem3);
+
+        jMenuItem4.setText("Professor");
+        jMenu3.add(jMenuItem4);
+
+        jMenuItem5.setText("Diretor");
+        jMenu3.add(jMenuItem5);
+
+        jMenuItem6.setText("Funcionarios");
+        jMenu3.add(jMenuItem6);
+
+        jMenuItem7.setText("Horario");
+        jMenu3.add(jMenuItem7);
+
+        jMenuItem8.setText("Notas");
+        jMenu3.add(jMenuItem8);
+
+        jMenuItem9.setText("Eventos");
+        jMenu3.add(jMenuItem9);
+
+        jMenuBar1.add(jMenu3);
+
+        jMenu2.setText("Sobre");
+        jMenuBar1.add(jMenu2);
+
+        setJMenuBar(jMenuBar1);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     /**
@@ -78,5 +211,31 @@ public class Main extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton12;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenu jMenu4;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JMenuItem jMenuItem5;
+    private javax.swing.JMenuItem jMenuItem6;
+    private javax.swing.JMenuItem jMenuItem7;
+    private javax.swing.JMenuItem jMenuItem8;
+    private javax.swing.JMenuItem jMenuItem9;
+    private javax.swing.JToolBar jToolBar1;
     // End of variables declaration//GEN-END:variables
 }
